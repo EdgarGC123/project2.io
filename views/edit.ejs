@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure Time</title>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <div class="container">
+        <h1>Edit Your Adventure</h1>
+        <form action="/bucket-list-adventure/<%=ad.id%>?_method=PUT" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" value="<%=ad.title%>" /><br>
+        <label for="description">description:</label>
+        <input type="text" name="description" value="<%=ad.description%>"/><br>
+        <label for="why">Why:</label>
+        <input type="text" name="why" value="<%=ad.why%>"/><br>
+        <label for="physicalNecessities">Physical Necessities:</label>
+        <input type="text" name="physicalNecessities" value="<%=ad.physicalNecessities%>"/><br>
+        <label for="financialNecessities">Financial Necessities:</label>
+        <input type="text" name="financialNecessities" value="<%=ad.financialNecessities%>"/><br>
+        <label for="desiredLocation">Desired Location:</label>
+        <input type="text" name="desiredLocation" value="<%=ad.desiredLocation%>"/><br>
+        <label for="img">Image URL:</label>
+        <input type="text" name="img" value="<%=ad.img%>"/><br>
+        <br/>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+        <a href="/bucket-list-adventure">
+            <button type="button" name="button" >
+            Back
+            </button>
+        </a>
+    </div>
+  </body>
+</html>

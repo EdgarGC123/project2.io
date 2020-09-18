@@ -1,11 +1,14 @@
-//___________________
+//___________________# mongodb+srv://edgar.galvancuesta@gmail.com:Powerful1s@ga-sei-u8fme.mongodb.net/test?retryWrites=true&w=majority
 //Dependencies
 //___________________
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
-const app = express ();
+const app = express();
 const db = mongoose.connection;
+require('dotenv').config();
+
+const Buckets = require("./models/BucketList.js")
 //___________________
 //Port
 //___________________
@@ -46,10 +49,17 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 // Routes
 //___________________
+const bl_controller = require("./controllers/BucketList_Controller.js")
+app.use(bl_controller);
+
+
+
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+app.get("/", (req,res)=>{
+  Buckets.find({}, (err, data)=>{
+      res.redirect("/bucket-list-adventure")
+  })
+})
 
 //___________________
 //Listener

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure Time</title>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <div class="container">
+
+      <h1>Lets Go Adventures Hunting!</h1>
+      <a href="/bucket-list-adventure/new"> Create A New Bucket List Adventure!</a>
+      <ul>
+        <% for (let ad of ads ) { %>
+          <li>
+            <a href="/bucket-list-adventure/<%=ad._id%>">
+              <%= ad.title %>
+          </li>
+       <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
