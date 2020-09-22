@@ -33,11 +33,19 @@ module.exports = [
         img: "https://i.pinimg.com/originals/79/64/e3/7964e3fb3581beac9aeb780e751fae3c.jpg"
     },{
         title: "Deep Sea Diving",
+        description: "Descending below the water's surface to interact with the environment.",
+        why: "Visit underwater environments such as the underwater veterans memorial",
+        physicalNecessities: "Oxygen Tank.\n Guide.\n Wetsuit ",
+        financialNecessities: 150,
+        desiredLocation: "Arizona",
+        img: "https://www.tampabay.com/resizer/OIOIKJjthT3q_o8-SWx1qUL5wGk=/1200x1200/smart/arc-anglerfish-arc2-prod-tbt.s3.amazonaws.com/public/F3REIGGIJAI6TGNIIBWI6S7HAY.jpg"
+    },{
+        title: "African Safari",
         description: "Swimming  ", 
         why: "Ride in a large basket lifted by a large hot air balloon",
         physicalNecessities: "Oxygen Tank.\n Guide.\n Wetsuit ",
         financialNecessities: 150,
         desiredLocation: "Arizona",
-        img: "https://www.tampabay.com/resizer/OIOIKJjthT3q_o8-SWx1qUL5wGk=/1200x1200/smart/arc-anglerfish-arc2-prod-tbt.s3.amazonaws.com/public/F3REIGGIJAI6TGNIIBWI6S7HAY.jpg"
+        img: "https://www.mensjournal.com/wp-content/uploads/2018/10/Lion_Full.jpg?w=1200&h=1200&crop=1&quality=86&strip=all"
     }
 ]

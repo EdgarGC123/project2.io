@@ -7,7 +7,7 @@ a{
     color: #52489C;
 }
 body{
-    background-color: #59C3C3;
+    background-color: #EBEBEB;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -34,7 +34,6 @@ header{
     margin: 10px;
 }
 .creds{
-    background-color: #59C3C3;
     color: #EBEBEB;
     /* text-align: right; */
     float: right;
@@ -44,13 +43,19 @@ header{
 }
 .container{
     background-color: #EBEBEB;
+    background-image: url("https://images.hdqwalls.com/wallpapers/anime-clouds-birds-flying-4k-o2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 90vw;
     /* max-height: 750px; */
     margin-bottom: 20px;
     box-shadow: 6px 6px 15px #52489C;
     padding: 25px;
+    background-position: left;
+    border: 2px solid #52489C;
+    border-radius: 25px;
 }
 .alldata{
     display: flex;
@@ -70,8 +75,8 @@ header{
     height: 80%;
     width: 100%;
     border: 2px solid #52489C;
-    border-radius: 20px;
-    box-shadow: 6px 6px 15px #59C3C3;
+    border-radius: 4px;
+    box-shadow: 6px 6px 15px #EBEBEB;
 }
 .sadventure{
     height: 500px;
