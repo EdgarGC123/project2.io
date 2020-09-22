@@ -8,6 +8,7 @@ const app = express();
 const db = mongoose.connection;
 require('dotenv').config();
 
+
 const Buckets = require("./models/BucketList.js")
 //___________________
 //Port
@@ -15,6 +16,7 @@ const Buckets = require("./models/BucketList.js")
 // Allow use of Heroku's port or your own local port, depending on the environment
 const PORT = process.env.PORT || 3003;
 
+app.use( express.static("public"))
 //___________________
 //Database
 //___________________

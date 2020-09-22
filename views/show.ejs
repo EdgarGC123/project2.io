@@ -3,20 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Adventure Time</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <nav>
-    </nav>
+    <header>
+      <span class="firstTitle">
+        <h1><span class="headingTitle" >Check Out This Adventure</span></h1>
+      </span>
+      <nav>
+      </nav>
+    </header>
     <div class="container">
-        <h1>Check Out This Adventure</h1>
+        <img src="<%=ad.img%>"class="sadventure">
+        <br>
         This adventure is: <%=ad.title%>.
         <%=ad.description%>.
         <%=ad.why%>
         Physical Necessities: <%=ad.physicalNecessities%>
         Financial Necessities: <%=ad.financialNecessities%>
         Desired Locations: <%=ad.desiredLocation%><br>
-        Image: <br><img src="<%=ad.img%>" height=200px width=300px>
-        <br>
         <button type="button" name="button"><a href="/bucket-list-adventure/<%=ad._id%>/edit">Edit</a></button>
         <br>
         <br>

@@ -3,19 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Adventure Time</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <nav>
-    </nav>
-    <div class="container">
+    <header>
+      <h1><span class="headingTitle" >Lets Go Adventure Hunting!</span></h1>
+    </header>
+    <div class="top">
 
-      <h1>Lets Go Adventures Hunting!</h1>
       <a href="/bucket-list-adventure/new"> Create A New Bucket List Adventure!</a>
-      <ul>
+      <nav class="creds">
+        <a><button>Login</button></a>
+        <a><button>Sign Up</button></a>
+      </nav>
+  </div>
+    <div class="container">
+      <ul class="alldata">
         <% for (let ad of ads ) { %>
-          <li>
+          <li class="item">
             <a href="/bucket-list-adventure/<%=ad._id%>">
-              <%= ad.title %>
+              <img src="<%=ad.img%>" class="iadventure">
+            </a>
+            <h4><%= ad.title %></h4>
           </li>
        <% } %>
       </ul>
