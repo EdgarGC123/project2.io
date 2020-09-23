@@ -64,7 +64,7 @@ module.exports = [
         desiredLocation: "add",
         img: "https://fox2now.com/wp-content/uploads/sites/14/2018/05/gettyimages-668303362.jpg?w=2121&h=1414&crop=1"
     },{
-        title: "Gandola Ride",
+        title: "Gondola Ride",
         description: "add", 
         why: "add",
         physicalNecessities: "add",
