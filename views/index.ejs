@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <%- include('./partials/head.ejs') %>
   </head>
   <body>
@@ -26,8 +25,8 @@
             <li class="i">
               <a href="/bucket-list-adventure/<%=ad._id%>">
                 <img src="<%=ad.img%>" class="iadventure">
+                <h1 class="itext"><span class="itback"><%= ad.title %></span></h1>
               </a>
-              <h4 class="itext"><%= ad.title %></h4>
             </li>
         <% } %>
         </ul>

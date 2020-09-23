@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <%- include('./partials/head.ejs') %>
   </head>
   <body>
@@ -11,31 +10,38 @@
         <h1><span class="headingTitle" >Your New Adventure</span></h1>
       </span>
     </header>
-    <div class="ocontainer">
+    <div class="ocontainer row">
         <form action="/bucket-list-adventure/" method="POST">
-        <label for="title">Title:</label>
-        <input type="text" name="title"  /><br>
-        <label for="description">description:</label>
-        <input type="text" name="description"/><br>
-        <label for="why">Why:</label>
-        <input type="text" name="why" /><br>
-        <label for="physicalNecessities">Physical Necessities:</label>
-        <input type="text" name="physicalNecessities" /><br>
-        <label for="financialNecessities">Financial Necessities:</label>
-        <input type="text" name="financialNecessities" /><br>
-        <label for="desiredLocation">Desired Location:</label>
-        <input type="text" name="desiredLocation" /><br>
-        <label for="img">Image URL:</label>
-        <input type="text" name="img" /><br>
-        <br/>
-        <br>
-        <input type="submit" value="Submit">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <label for="title">Title:</label><br><br>
+            <label for="description">description:</label><br><br>
+            <label for="why">Why:</label><br><br>
+            <label for="physicalNecessities">Physical Necessities:</label><br><br>
+            <label for="financialNecessities">Financial Necessities:</label><br><br>
+            <label for="desiredLocation">Desired Location:</label><br><br>
+            <label for="img">Image URL:</label><br><br>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="title" /><br><br>
+            <input type="text" name="description"/><br><br>
+            <input type="text" name="why" /><br><br>
+            <input type="text" name="physicalNecessities" /><br><br>
+            <input type="number" name="financialNecessities" /><br><br>
+            <input type="text" name="desiredLocation" /><br><br>
+            <input type="text" name="img" /><br><br>
+            <br/>
+            <br>
+            <input class="btn btn-default" type="submit" value="Submit">
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="/bucket-list-adventure">
+              <button class="btn btn-default" type="button" name="button" >Back</button>
+            </a>
+          </div>
         </form>
-        <a href="/bucket-list-adventure">
-            <button type="button" name="button" >
-            Back
-            </button>
-        </a>
     </div>
   </body>
 </html>

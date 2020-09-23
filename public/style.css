@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background-image: url("https://wallpapershome.com/images/wallpapers/waterfall-3840x2160-5k-4k-wallpaper-hills-rocks-6525.jpeg");
     background-repeat: no-repeat;
@@ -46,9 +47,22 @@ body{
 } */
 .i{
     list-style: none;
-    /* text-align: center; */
-    float: left;
-    flex: 1;
+    text-align: center;
+    position: relative;
+}
+.itext{
+    clear: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    font-family: 'Caveat';
+    text-shadow: 1px 1px 1px white;
+    font-size: xx-large;
+    color: black;
+}
+.itback{
+    background-color: rgba(0,0,0,.3);
 }
 .iadventure{
     /* height: 70%; */
@@ -65,13 +79,11 @@ body{
     text-shadow: 3px 3px 5px white;
 }
 .ocontainer{
-    
+    text-shadow: 1px 1px 2px white;
+    font-size: large;
+    color: purple;
+    text-align: center;
 }
-.sadventure{
-    height: 500px;
-    width: 600px;
-}
-
 
 
 /* .arrow {

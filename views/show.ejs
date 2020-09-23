@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <%- include('./partials/head.ejs') %>
   </head>
-  <body>
+
+  <body style="background-image: url(<%=ad.img%>);">
     <%- include('./partials/nav.ejs') %>
     <header class="oheader">
       <span class="firstTitle">
@@ -12,29 +12,30 @@
       </span>
     </header>
     <div class="ocontainer">
-        <img src="<%=ad.img%>"class="sadventure">
         <br><br>
-        This adventure is: <%=ad.title%>.
+        <h2><%=ad.title%></h2>
+        <br>
+        <h3>Description: </h3>
+        <%=ad.description%>
         <br><br>
-        <%=ad.description%>.
+        <h3>The Reason:</h3> <%=ad.why%>
         <br><br>
-        The Reason: 
-        <%=ad.why%>
-        <br><br>
-        Physical Necessities: <%=ad.physicalNecessities%><br><br>
-        Financial Necessities: <%=ad.financialNecessities%><br><br>
-        Desired Locations: <%=ad.desiredLocation%><br>
-        <button type="button" name="button"><a href="/bucket-list-adventure/<%=ad._id%>/edit">Edit</a></button>
+        <h3>Physical Necessities: </h3><%=ad.physicalNecessities%><br><br>
+        <h3>Financial Necessities: </h3>$<%=ad.financialNecessities%><br><br>
+        <h3>Desired Locations: </h3><%=ad.desiredLocation%><br>
         <br>
         <br>
+        <a href="/bucket-list-adventure/<%=ad._id%>/edit"><button class="btn btn-default" type="button" name="button">Edit</button></a>
+        <br><br>
         <form action="/bucket-list-adventure/<%=ad._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE"/>
+            <input class="btn btn-default" type="submit" value="DELETE"/>
         </form>
         <br>
+        <br>
         <a>
-        <button type="button" name="button">
-            <a href="/bucket-list-adventure">Back</a>
-        </button>
+          <a href="/bucket-list-adventure">
+            <button class="btn btn-default" type="button" name="button">Back</button>
+          </a>
         </a>
     </div>
   </body>
