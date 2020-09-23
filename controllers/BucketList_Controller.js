@@ -12,7 +12,7 @@ router.get('/bucket-list-adventure/seed', (req, res)=>{
 //drop everything
 router.get('/bucket-list-adventure/drop/everything', (req, res)=>{
     Buckets.collection.drop();
-    res.send("You have dropped collection")
+    res.send("<a href='/bucket-list-adventure'>You have dropped collection</a>")
 });
 
 //NEW

@@ -6,7 +6,7 @@ module.exports = [
         physicalNecessities: "Clothing that might get wet. \n At least 2 members.", 
         financialNecessities: 400,
         desiredLocation: "California",
-        img: "https://www.equisearch.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTQ1MjM0OTQwODUwMjE4Mzky/14-unforgettable-beach-rides-promo-image.jpg"
+        img: "https://wallpapercrafter.com/desktop/270522-horse-beach-horse-riding-and-island-hd.jpg"
     },{
         title: "Bungee Jumping",
         description: "Jumping off a ledge or bridge tied to a bungee cord for safe rebound.", 
@@ -14,7 +14,7 @@ module.exports = [
         physicalNecessities: "Full clothing artifacts. \n Optional: Camera's for recording in person or 3rd party", 
         financialNecessities: 250,
         desiredLocation: "Florida",
-        img: "https://s3-ap-northeast-1.amazonaws.com/thegate/2020/08/07/14/11/22/Ryujin-Big-Suspension-Bridge-Bungee-Jump_1200x1200"
+        img: "https://wallpapercave.com/wp/wp4149263.jpg"
     },{
         title: "Hot Air Balloon Ride",
         description: "Ride in a large basket lifted by a large hot air balloon", 
@@ -22,15 +22,15 @@ module.exports = [
         physicalNecessities: "Full clothing artifacts. \n Optional: Camera's for recording.\n Optional: Coats or warm cloathing for cooler temp", 
         financialNecessities: 200,
         desiredLocation: "New Mexico",
-        img: "https://www.mycoloradoparks.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU5MTY4OTA2NDQ5OTIxODE2/albuquerque-hot-air-balloons_shutterstock_680.jpg"
+        img: "https://i.pinimg.com/originals/11/6b/4d/116b4d3e300b83f50223a8ebe577ae6f.jpg"
     },{
         title: "Snorkeling",
         description: "Swimming  ", 
-        why: "Ride in a large basket lifted by a large hot air balloon",
-        physicalNecessities: "Diving Mask aka Snorkel.\n Snorkeling Guide.\n Optional: Wetsuit ",
+        why: "add",
+        physicalNecessities: "add",
         financialNecessities: 350,
         desiredLocation: "Florida",
-        img: "https://i.pinimg.com/originals/79/64/e3/7964e3fb3581beac9aeb780e751fae3c.jpg"
+        img: "https://wallpapercave.com/wp/wp5623815.jpg"
     },{
         title: "Deep Sea Diving",
         description: "Descending below the water's surface to interact with the environment.",
@@ -38,14 +38,70 @@ module.exports = [
         physicalNecessities: "Oxygen Tank.\n Guide.\n Wetsuit ",
         financialNecessities: 150,
         desiredLocation: "Arizona",
-        img: "https://www.tampabay.com/resizer/OIOIKJjthT3q_o8-SWx1qUL5wGk=/1200x1200/smart/arc-anglerfish-arc2-prod-tbt.s3.amazonaws.com/public/F3REIGGIJAI6TGNIIBWI6S7HAY.jpg"
+        img: "https://cdn.hipwallpaper.com/i/53/58/UnVgMl.jpg"
     },{
         title: "African Safari",
-        description: "Swimming  ", 
-        why: "Ride in a large basket lifted by a large hot air balloon",
+        description: "A way for tourists to safely observe and photograph wildlife in Africa", 
+        why: "Great way to see foreign animals that don't naturally live in your local area.",
         physicalNecessities: "Oxygen Tank.\n Guide.\n Wetsuit ",
         financialNecessities: 150,
         desiredLocation: "Arizona",
-        img: "https://www.mensjournal.com/wp-content/uploads/2018/10/Lion_Full.jpg?w=1200&h=1200&crop=1&quality=86&strip=all"
+        img: "https://media.cntraveler.com/photos/5ad8a64ef4312e2ef1476d02/5:4/w_3540,h_2832,c_limit/GettyImages-168252293.jpg"
+    },{
+        title: "Disney World",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 150,
+        desiredLocation: "add",
+        img: "https://images6.alphacoders.com/469/469195.jpg"
+    },{
+        title: "Nude Beach",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "add",
+        img: "https://fox2now.com/wp-content/uploads/sites/14/2018/05/gettyimages-668303362.jpg?w=2121&h=1414&crop=1"
+    },{
+        title: "Gandola Ride",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "Venice, Italy",
+        img: "https://wallpapercave.com/wp/wp4689693.jpg"
+    },{
+        title: "Great Wall Of China",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "add",
+        img: "https://images.hdqwalls.com/wallpapers/great-wall-of-china-4k-ch.jpg"
+    },{
+        title: "Christ The Redeemer",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "add",
+        img: "https://adwallpapers.xyz/uploads/posts/147461-christ-the-redeemer-4k-ultra-hd-wallpaper.jpg"
+    },{
+        title: "Angkor Wat",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "add",
+        img: "https://wallpaperaccess.com/full/1913479.jpg"
+    },{
+        title: "Climb Mount Kilimanjaro",
+        description: "add", 
+        why: "add",
+        physicalNecessities: "add",
+        financialNecessities: 0,
+        desiredLocation: "add",
+        img: "https://wallpapercave.com/wp/wp2563176.jpg"
     }
 ]

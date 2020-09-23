@@ -2,83 +2,111 @@
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color: #52489C;
-}
 body{
-    background-color: #EBEBEB;
+    background-image: url("https://wallpapershome.com/images/wallpapers/waterfall-3840x2160-5k-4k-wallpaper-hills-rocks-6525.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.iheader{
+    font-size: x-large;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    text-shadow: 3px 3px 5px white;
+    height: 94vh;
+    width: 100vw;
+}
+
+.down-btn{
+    bottom: 0;
+    position: absolute;
+    /* min-width: 30px; */
+    margin: 0px calc(50vw - 15px);
+    filter: invert(1);
+
+    -webkit-animation: bounce .5s infinite alternate;
+    -o-animation: bounce .5s infinite alternate;
+    -moz-animation: bounce .5s infinite alternate;
+    animation: bounce .5s infinite alternate;
+}
+.sub-main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(13,auto);
+    text-align: center;
+}
+/* .alldata{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-}
-header{
-    text-align: center;
-    /* background-color: #F4D35E; */
-    text-shadow: 3px 3px 5px black;
-    color: #EBEBEB;
-    background-image: url("https://images.unsplash.com/photo-1493713838217-28e23b41b798?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 15vh;
-    width: 100vw;
-    /* box-shadow: inset 0 0 10px; */
-}
-.headingTitle {
-    background-color: rgba(0,0,0,.10);
-}
-.top{
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-}
-.creds{
-    color: #EBEBEB;
-    /* text-align: right; */
-    float: right;
-    /* border: 2px solid red; */
-    /* width: 50%; */
-    margin-right: 10px;
-}
-.container{
-    background-color: #EBEBEB;
-    background-image: url("https://images.hdqwalls.com/wallpapers/anime-clouds-birds-flying-4k-o2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90vw;
-    /* max-height: 750px; */
-    margin-bottom: 20px;
-    box-shadow: 6px 6px 15px #52489C;
-    padding: 25px;
-    background-position: left;
-    border: 2px solid #52489C;
-    border-radius: 25px;
-}
-.alldata{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-.item{
-    margin: 30px;
-    width: 40%;
+} */
+.i{
     list-style: none;
-    /* border: 1px solid red; */
-    text-align: center;
+    /* text-align: center; */
+    float: left;
+    flex: 1;
 }
 .iadventure{
-    height: 80%;
+    /* height: 70%; */
     width: 100%;
     border: 2px solid #52489C;
-    border-radius: 4px;
-    box-shadow: 6px 6px 15px #EBEBEB;
+    /* border-radius: 4px; */
+    /* box-shadow: 4px 4px 15px #EBEBEB; */
+}
+
+.oheader{
+    font-size: x-large;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    text-shadow: 3px 3px 5px white;
 }
 .sadventure{
     height: 500px;
     width: 600px;
 }
+
+
+
+/* .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+ */
+
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0,0,0,0);
+}
+
+body::-webkit-scrollbar-thumb {
+background: rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+}
+
+@-webkit-keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+  @-o-keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+  @-moz-keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }

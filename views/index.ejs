@@ -2,32 +2,38 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Adventure Time</title>
-    <link rel="stylesheet" href="/style.css">
+    <%- include('./partials/head.ejs') %>
   </head>
   <body>
-    <header>
-      <h1><span class="headingTitle" >Lets Go Adventure Hunting!</span></h1>
-    </header>
-    <div class="top">
+    <%- include('./partials/nav.ejs') %>
 
-      <a href="/bucket-list-adventure/new"> Create A New Bucket List Adventure!</a>
-      <nav class="creds">
-        <a><button>Login</button></a>
-        <a><button>Sign Up</button></a>
-      </nav>
+    <div class="main">
+
+      <header class="iheader">
+        <h1><span class="headingTitle" >Find Your Adventure</span></h1>
+        <div class="down-btn">
+          <svg class="down-btn-img">
+           <polyline points="1,0 100,100 200,0" />
+          </svg>
+         </div>
+         <!-- <i class="arrow down down-btn"></i> -->
+      </header>
+      
+      <div class="sub-main">
+        <!-- <img class="middleimage" src="https://images.hdqwalls.com/wallpapers/anime-clouds-birds-flying-4k-o2.jpg"> -->
+        <ul class="alldata">
+          <% for (let ad of ads ) { %>
+            <li class="i">
+              <a href="/bucket-list-adventure/<%=ad._id%>">
+                <img src="<%=ad.img%>" class="iadventure">
+              </a>
+              <h4 class="itext"><%= ad.title %></h4>
+            </li>
+        <% } %>
+        </ul>
+      </div>
+
   </div>
-    <div class="container">
-      <ul class="alldata">
-        <% for (let ad of ads ) { %>
-          <li class="item">
-            <a href="/bucket-list-adventure/<%=ad._id%>">
-              <img src="<%=ad.img%>" class="iadventure">
-            </a>
-            <h4><%= ad.title %></h4>
-          </li>
-       <% } %>
-      </ul>
-    </div>
   </body>
 </html>
+

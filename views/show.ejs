@@ -2,25 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Adventure Time</title>
-    <link rel="stylesheet" href="/style.css">
+    <%- include('./partials/head.ejs') %>
   </head>
   <body>
-    <header>
+    <%- include('./partials/nav.ejs') %>
+    <header class="oheader">
       <span class="firstTitle">
         <h1><span class="headingTitle" >Check Out This Adventure</span></h1>
       </span>
-      <nav>
-      </nav>
     </header>
-    <div class="container">
+    <div class="ocontainer">
         <img src="<%=ad.img%>"class="sadventure">
-        <br>
+        <br><br>
         This adventure is: <%=ad.title%>.
+        <br><br>
         <%=ad.description%>.
+        <br><br>
+        The Reason: 
         <%=ad.why%>
-        Physical Necessities: <%=ad.physicalNecessities%>
-        Financial Necessities: <%=ad.financialNecessities%>
+        <br><br>
+        Physical Necessities: <%=ad.physicalNecessities%><br><br>
+        Financial Necessities: <%=ad.financialNecessities%><br><br>
         Desired Locations: <%=ad.desiredLocation%><br>
         <button type="button" name="button"><a href="/bucket-list-adventure/<%=ad._id%>/edit">Edit</a></button>
         <br>
