@@ -38,9 +38,9 @@ body{
     animation: bounce .5s infinite alternate;
 }
 .sub-main{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(13,auto);
+    grid-template-rows: repeat(13,auto); */
     text-align: center;
 }
 /* .alldata{
@@ -85,7 +85,7 @@ body{
     text-align: center;
     text-shadow: 3px 3px 5px white;
 }
-.ocontainer{
+.ocontainer, h4{
     text-shadow: 1px 1px 2px white;
     font-size: large;
     color: purple;
